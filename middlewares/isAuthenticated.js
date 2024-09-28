@@ -5,6 +5,7 @@ const isAuthenticated = async (req, res, next) => {
         const token = req.cookies.token;
 
         console.log("Token:", token); // Add this line to log the token.
+        console.log("WHat is the problem here"); // Add this line to log the token.
 
         if (!token) {
             return res.status(401).json({
