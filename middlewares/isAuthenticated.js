@@ -8,7 +8,7 @@ const isAuthenticated = async (req, res, next) => {
 
         if (!token) {
             return res.status(401).json({
-                message: "User not authenticated bother",
+                message: "User not authenticated brother",
                 success: false,
             })
         }
